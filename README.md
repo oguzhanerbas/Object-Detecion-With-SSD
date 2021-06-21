@@ -13,6 +13,24 @@ Object Detecion With SSD
 ### Protobuf
 - https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0
 - Download the available version for your pc.
-- Extract to models-master
+- Extract to models-master (only protoc.exe)
+- protoc object_detection/protos/*.proto --python_out=. (This code should run in, where protoc exe, with python terminal)
+- also run python setup.py build and python setup.py install
 
+### Run
+- Run webcam_detection.py
+- Install Spyder, Numpy, Opencv
+- pip install tf_slim
+
+### Labelimg
+- Create "custom object" file in models-master
+- Create "data, images, training" file in custom object
+- Create "test and train" file in the images file
+- Download https://github.com/tzutalin/labelImg
+- Extract to custom object file
+- conda install pyqt=5 
+- conda install -c anaconda lxml
+- pyrcc5 -o libs/resources.py resources.qrc
+- Python labelImg.py
+- Detect images what you want to detect with labelimg
 
