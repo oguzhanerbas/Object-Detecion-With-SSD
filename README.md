@@ -33,4 +33,10 @@ Object Detecion With SSD
 - pyrcc5 -o libs/resources.py resources.qrc
 - Python labelImg.py
 - Detect images what you want to detect with labelimg
+- Seperate images (test and train)
+
+### Training
+- Python xml_to_csv.py
+- Change the generate_tfrecord.py
+- python generate_tfrecord.py --csv_input=data/test_labels.csv --output_path=data/test.record --image_dir=images/test/
 
