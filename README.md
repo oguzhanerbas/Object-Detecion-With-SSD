@@ -50,7 +50,7 @@ Object Detecion With SSD
 - Create .py file to new file
 
 ### Python Code
-        import numpy as np
+    import numpy as np
     import tensorflow as tf
     import cv2 as cv
     canli = cv.VideoCapture('video.mp4')
